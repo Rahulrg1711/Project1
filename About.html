@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Web Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://use.fontawesome.com/fb941bd4a7.js"></script>
+   
+</head>
+
+<body>
+    <!-- header -->
+    <section class="Sub-header">
+        <nav >
+            <a href="index.html"><img src="images/logo.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                
+                <ul >
+                    <li><a href="About.html" >Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+       <h1>About Us</h1>
+    </section>
+
+<!-- about us content -->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse hic provident temporibus sunt? Inventore, harum ipsam. Ex esse illum, adipisci dolore autem, porro assumenda incidunt dicta similique odio, molestiae provident.</p>
+            <a href="" class="hero-btn red-btn" >EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+
+        </div>
+
+    </div>
+</section>
+  
+    <!-- footer -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Impedit ipsa expedita quas voluptatibus, aut
+            voluptatem harum illum debitis atque ea incidunt.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <p>Made by <i class="fa fa-heart-o"></i>SIS [Simple Internet Solutions]</p>
+
+        </div>
+    </section>
+
+
+
+    <!-- java script -->
+    <script>
+        var navLinks = document.getElementById("navlink");
+        function showMenu(){
+            
+            navLinks.style.right = "0px";
+        };
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        };
+    </script>
+
+</body>
+</html>
